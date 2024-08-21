@@ -1,0 +1,222 @@
+header{
+    display: flex;
+}
+.banner{
+    background: url('./assets/images/bannerbg.png') no-repeat;
+    height: 75vh;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bannerContent h1{
+    font-weight: 400;
+    letter-spacing: 10px;
+    font-size: 32px;
+}
+.bannerContent p{
+    font-weight: 200;
+    font-size: 14px;
+}
+.realDeal{
+    background-color: #141414;
+    padding: 100px 0;
+}
+.bigStar{
+    margin-top: -30px;
+    display: flex;
+}
+.realDeal h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+.realDeal h4{
+    font-weight: 400;
+    font-size: 16px;
+}
+.realDeal ol li{
+    font-size: 12px;
+    color: #a3a3a3;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 45px;
+}
+.textGrey{
+    color: #757575;
+}
+.leftRealDeel p{
+    border-bottom: 1px solid #404040;
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+.solidButton, .mobileFooter button{
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.linkButton{
+    font-size: 12px;
+    font-weight: 300;
+}
+.mvpBoxDesktop ol,.mvpBoxMobile ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+.mvpBoxDesktop ol li span,
+.mvpBoxMobile ol li span{
+    color: #9e8b78;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 4px;
+}
+.mvpBoxDesktop ol li::before,
+.mvpBoxMobile ol li::before{
+    content: ""; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%; 
+    border:1px solid #9e8b78; 
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+  
+.mvpBoxDesktop ol li::after,.mvpBoxMobile ol li::after{
+    content: '';
+    position: absolute;
+    left: 14px; 
+    top: 28px; 
+    width: 1px;
+    height: 18px; 
+    background-color: #9e8b78; 
+}
+.leftRealDeel img:nth-child(1),.leftRealDeel img:nth-child(3){
+    width: 16px;
+}
+.leftRealDeel img:nth-child(2){
+    width: 20px;
+}
+.blackBox{
+    background-color: #0c0c0c;
+    padding: 20px;
+    border-radius: 16px;
+    min-height: 200px;
+    max-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.blackBox h5{
+    color: #9e8b78;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.blackBox p{
+    font-size: 12px;
+}
+.blackBox img{
+    width: 42px;
+}
+.leftRealDeel ol li:last-child::after {
+    display: none; 
+}
+.faqs{
+    background-color: black;
+    padding: 100px 0;
+}
+.faqs h4{
+    border-bottom: 1px solid #404040;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+.threeStars,.mvpBoxDesktop{
+    display: flex;
+}
+
+.container {
+    max-width: 800px !important;
+}
+.mobileHome,.mobileFooter,.reelDealHeading img,.mvpBoxMobile{
+    display: none;
+}
+.mvpBoxDesktop{
+    flex-direction: column;
+}
+.mobileFooter{
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background: rgb(0 0 0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+@media (max-width:768px){
+    
+    .banner{
+        align-items: flex-end;
+        justify-content: flex-start;
+        height: auto;
+        padding: 50px 10px;
+    }
+    .bannerContent h1 {
+        font-size: 20px;
+    }
+    .mobileHome{
+        display: flex;
+        margin-top: -25px;
+        justify-content: end;
+    }
+    .solidButton,header,.linkButton,.threeStars,.mvpBoxDesktop{
+        display: none;
+    }
+    .realDeal,.faqs{
+        padding: 50px 0;
+    }
+    .contentAccordion {
+        padding: 20px 10px 0px 40px;
+    }
+    .reelDealHeading{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .reelDealHeading img, .mobileFooter, .mvpBoxMobile{
+        display: flex;
+    }
+    .mvpBoxMobile{
+        flex-direction: column;
+    }
+    .mobileFooter p{
+        color: #fff;
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+}
+
+  

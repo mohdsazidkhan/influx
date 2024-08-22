@@ -3,7 +3,7 @@ header{
 }
 .banner{
     background: url('./assets/images/bannerbg.png') no-repeat;
-    height: 75vh;
+    height: 80vh;
     background-size: cover;
     background-position: top;
     display: flex;

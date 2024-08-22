@@ -135,7 +135,8 @@ header{
 .blackBox img{
     width: 42px;
 }
-.leftRealDeel ol li:last-child::after {
+.mvpBoxMobile ol li:last-child::after ,
+.mvpBoxDesktop ol li:last-child::after {
     display: none; 
 }
 .faqs{

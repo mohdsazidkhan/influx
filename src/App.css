@@ -186,10 +186,13 @@ header{
     .bannerContent h1 {
         font-size: 20px;
     }
+    .leftRealDeel p{
+        text-align: center;
+    }
     .mobileHome{
         display: flex;
-        margin-top: -25px;
         justify-content: end;
+        padding-bottom: 50px;
     }
     .solidButton,header,.linkButton,.threeStars,.mvpBoxDesktop{
         display: none;

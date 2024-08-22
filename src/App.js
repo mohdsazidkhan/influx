@@ -12,40 +12,10 @@ import ConvenienceFee from './assets/images/convenienceFee.svg';
 import HomeIcon from './assets/images/Home.svg';
 import { MdArrowForward } from "react-icons/md";
 import Accordion from "./components/Accordion"
+import data from "./accordion.json";
 
 function App() {
-  const accordionItems = [
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
-      content1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    },
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      content1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    },
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      content1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    },
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      content1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    },
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      content1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    },
-    {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      content1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    }
-  ];
+  console.log(data, ' data')
   return (
     <div className="homepage">
       <section className='banner'>
@@ -59,7 +29,7 @@ function App() {
       <section className='realDeal'>
           <div className='container'>
             <div className='row'>
-              <div className='col-lg-4 col-md-4 col-sm-12'>
+              <div className='col-lg-4 col-md-12 col-sm-12'>
                 <div className='leftRealDeel'>
                   <div className='gap-1 threeStars'>
                     <img src={StarSolidSmall1} alt='mySvgImage' />
@@ -82,9 +52,9 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-8 col-md-8 col-sm-12'>
+              <div className='col-lg-8 col-md-12 col-sm-12'>
                 <div className='row'>
-                  <div className='col-lg-4 col-md-4col-lg-4 col-md-4 col-6'>
+                  <div className='col-lg-4 col-md-6 col-6'>
                     <div className='blackBox'>
                       <img src={CerditPerMonth} alt='CerditPerMonth' />
                       <div>
@@ -93,7 +63,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className='col-lg-4 col-md-4col-lg-4 col-md-4 col-6'>
+                  <div className='col-lg-4 col-md-6 col-6'>
                     <div className='blackBox'>
                       <img src={UnusedCard} alt='UnusedCard' />
                       <div>
@@ -102,7 +72,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className='col-lg-4 col-md-4col-lg-4 col-md-4 col-6'>
+                  <div className='col-lg-4 col-md-6 col-6'>
                     <div className='blackBox'>
                       <img src={MmrPerks} alt='MmrPerks' />
                       <div>
@@ -112,7 +82,7 @@ function App() {
                     </div>
                   </div>
            
-                  <div className='col-lg-4 col-md-4col-lg-4 col-md-4 col-6'>
+                  <div className='col-lg-4 col-md-6 col-6'>
                     <div className='blackBox'>
                       <img src={Flexible} alt='Flexible' />
                       <div>
@@ -121,7 +91,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className='col-lg-4 col-md-4col-lg-4 col-md-4 col-6'>
+                  <div className='col-lg-4 col-md-6 col-6'>
                     <div className='blackBox'>
                       <img src={DiscountOnFoodAndBeverages} alt='DiscountOnFoodAndBeverages' />
                       <div>
@@ -130,7 +100,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className='col-lg-4 col-md-4col-lg-4 col-md-4 col-6'>
+                  <div className='col-lg-4 col-md-6 col-6'>
                     <div className='blackBox'>
                       <img src={ConvenienceFee} alt='ConvenienceFee' />
                       <div>
@@ -157,7 +127,7 @@ function App() {
       <section className='faqs'>
         <div className='container'>
          <h4 className='text-white'>Frequently Asked Questions</h4>
-         <Accordion items={accordionItems} />
+         <Accordion items={data.accordionItems} />
          </div>
       </section>
       <div className='mobileFooter'>
